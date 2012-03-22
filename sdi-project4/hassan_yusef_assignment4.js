@@ -16,17 +16,21 @@ var frame = {
  	internet: function (u) {
  		var iPattern = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.+=&%@!\-\/]))?/;
  			return iPattern.test(u)
- 	}
+ 	},
+ 	
+	separate: function (a,b,c) {
+		var sPattern = a.split(b)
+			return sPattern.join (c)
 	
-	
+    }
+ 
+  
 	
 };
 console.log(frame.number(3304128538))
 console.log(frame.email("cardean13@fullsail.edu"))
 console.log(frame.internet("http://www.androidguys.com/"))
-
-
-
+console.log(frame.separate("xnnnynnnznnn", "nnn", "1"))
 
 
 
