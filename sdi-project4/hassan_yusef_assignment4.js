@@ -29,16 +29,25 @@ var frame = {
     
     stringNumber: function (s) {
     	return parseInt (s)
-    }
+    },
  
-  
+ 
+
+	decimalNumber: function (d) {
+		var num = 3.14159
+			return num.toFixed(2)
+	}
 	
 };
+	
+	
+	
+
 console.log(frame.number(3304128538))
 console.log(frame.email("cardean13@fullsail.edu"))
 console.log(frame.internet("http://www.androidguys.com/"))
 console.log(frame.separate("xnnnynnnznnn", "nnn", "1"))
 console.log(frame.stringNumber("123456789"))
-
+console.log(frame.decimalNumber(3.14159))
 
 
